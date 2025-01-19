@@ -11,7 +11,7 @@ def predict(data):
     '''
     # Load model
     model = Model(model_size, 8, 400, 4, 0.5)
-    model.load_state_dict(torch.load('test_model.pth'))
+    model.load_state_dict(torch.load('test_model.pth'), map_location=torch.device('cpu'))
     model.eval()
     # dataframe to tensor
     data = torch.tensor(data.values, dtype=torch.float32)
