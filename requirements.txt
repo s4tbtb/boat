@@ -1,0 +1,5 @@
+beautifulsoup4==4.12.3
+numpy==1.26.3
+pandas==1.5.3
+streamlit==1.41.1
+torch==2.5.1
