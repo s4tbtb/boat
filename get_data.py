@@ -1,11 +1,9 @@
 # 当日データの取得
 from bs4 import BeautifulSoup    #importする
 import requests
-import urllib
 import pandas as pd
 import numpy as np
 from datetime import date
-import pickle
 
 def get_data(date, race_number, stadium):
     '''
